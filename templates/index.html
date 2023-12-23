@@ -47,11 +47,19 @@
     </form>
     <div class="container mt-4">
         <h1>Movies</h1>
-        <ul>
+        <div class="row">
             {% for item in items %}
-            <li>{{ item.imdb.rating }}</li>
+            <div class="card " style="width: 18rem;">
+                <img src="{{item.poster}}" class="card-img-top" alt="..." width="200">
+                <div class="card-body">
+                  <h5 class="card-title">{{item.title}}</h5>
+                  <p class="card-text">{{item.fullplot}}</p>
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+
             {% endfor %}
-        </ul>
+        </div>
     </div>
 
 </body>
