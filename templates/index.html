@@ -34,14 +34,14 @@
         </div>
     </nav>
 
-    <form class="container mt-4">
+    <form class="container mt-4" method="POST" action="/">
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Movie Title</label>
-            <input type="text" class="form-control" id="movieTitle" aria-describedby="movieTitle">
+            <input type="text" class="form-control" name="title" id="movieTitle" aria-describedby="movieTitle">
         </div>
         <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Description</label>
-            <input type="text" class="form-control" id="movieDesc">
+            <input type="text" class="form-control" name="description" id="movieDesc">
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
